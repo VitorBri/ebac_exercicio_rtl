@@ -10,7 +10,7 @@ type Props = {
 
 const Post = ({ children, imageUrl }: Props) => (
     <div className={styles.post}>
-        <img className={styles['post-image']} src={imageUrl} />
+        <img alt='' className={styles['post-image']} src={imageUrl} />
         <p className={styles['post-text']}> {children} </p>
         <PostComments />
     </div>
